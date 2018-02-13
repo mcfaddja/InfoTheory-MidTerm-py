@@ -1,4 +1,5 @@
 import time
+import math
 
 
 
@@ -19,7 +20,7 @@ t0 = time.time()
 #textIn = textIn.lower()
 
 textIn0 = textIn
-nCpTOT = 4
+nCpTOT = 10
 for i in range(0, (nCpTOT+1)):
 	textIn1 = textIn0
 	nCp = i
@@ -91,7 +92,7 @@ for i in range(0, (nCpTOT+1)):
 	tTot = t1 - t0
 	print('elapsed time: ' + str(tTot) + ' seconds')
 	temp = nCp / nCpTOT
-	print('We are : ' + str(nCp / nCpTOT) + ' percent done, as we are . . . . ')
+	print('We are : ' + str(round(nCp / (1+nCpTOT))) + ' percent done, as we are . . . . ')
 	print('DONE with copy ' + str(nCp) + ' of ' + str(nCpTOT) + ' total copies.')
 	print('\n')
 	
