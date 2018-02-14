@@ -58,4 +58,14 @@ def lzCompr(textIn):
 	
 	
 #def lzDEcompr(comprTextIn):
+
+def lzDEcompr(inArray):
+	mySize = len(inArray)
+	mySize1 = mySize - 1
+
+	myEndSize = len(inArray(mySize - 1))
 	
+	deCompText = ""
+
+	for i in range(mySize1):
+		
